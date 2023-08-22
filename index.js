@@ -7,13 +7,11 @@ const signUpRouter = require("./src/api/signUp");
 const authRouter = require("./src/api/auth");
 const profileRouter = require("./src/api/profile");
 const itemRouter = require("./src/api/item");
-const expiredMiddleware = require("./src/api/utils/expiredMiddleware");
 
 const app = express();
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(expiredMiddleware);
 app.use(imageRouter);
 app.use(collectionRouter);
 app.use(signUpRouter);
