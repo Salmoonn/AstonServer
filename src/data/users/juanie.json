@@ -1,0 +1,91 @@
+{
+  "login": "juanie",
+  "email": "juanie@email.com",
+  "name": "juanie",
+  "totalSale": 0,
+  "volume": 23,
+  "sold": 4,
+  "followers": 1749,
+  "bio": null,
+  "link": {
+    "globe": null,
+    "discord": null,
+    "youtube": null,
+    "twitter": null,
+    "instagram": null
+  },
+  "items": null,
+  "collections": [
+    {
+      "id": "490b",
+      "name": "Planets",
+      "creator": "juanie",
+      "body": [
+        {
+          "id": "1cbe",
+          "creator": "juanie",
+          "name": "NFT Name",
+          "price": 1.85,
+          "highestBid": 3.91,
+          "tags": ["planet"],
+          "collection": "490b"
+        },
+        {
+          "id": "1d98",
+          "creator": "juanie",
+          "name": "NFT Name",
+          "price": 0.72,
+          "highestBid": 4.66,
+          "tags": ["planet"],
+          "collection": "490b"
+        },
+        {
+          "id": "8ab2",
+          "creator": "juanie",
+          "name": "NFT Name",
+          "price": 0.43,
+          "highestBid": 7.8,
+          "tags": ["planet"],
+          "collection": "490b"
+        },
+        {
+          "id": "61ce",
+          "creator": "juanie",
+          "name": "NFT Name",
+          "price": 0.29,
+          "highestBid": 4.08,
+          "tags": ["planet"],
+          "collection": "490b"
+        },
+        {
+          "id": "703b",
+          "creator": "juanie",
+          "name": "NFT Name",
+          "price": 9.95,
+          "highestBid": 2.95,
+          "tags": ["planet"],
+          "collection": "490b"
+        },
+        {
+          "id": "9859",
+          "creator": "juanie",
+          "name": "NFT Name",
+          "price": 1.21,
+          "highestBid": 3.94,
+          "tags": ["planet"],
+          "collection": "490b"
+        },
+        {
+          "id": "baee",
+          "creator": "juanie",
+          "name": "NFT Name",
+          "price": 8.46,
+          "highestBid": 1.16,
+          "tags": ["planet"],
+          "collection": "490b"
+        }
+      ]
+    }
+  ],
+  "roles": ["user"]
+}

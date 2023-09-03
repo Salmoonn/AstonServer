@@ -1,0 +1,55 @@
+{
+  "login": "shroomie",
+  "email": "shroomie@email.com",
+  "name": "shroomie",
+  "totalSale": 43.23,
+  "volume": 0,
+  "sold": 0,
+  "followers": 0,
+  "bio": null,
+  "link": {
+    "globe": null,
+    "discord": null,
+    "youtube": null,
+    "twitter": null,
+    "instagram": null
+  },
+  "items": null,
+  "collections": [
+    {
+      "id": "2e6a",
+      "name": "Mashroom",
+      "creator": "shroomie",
+      "body": [
+        {
+          "id": "cea5",
+          "creator": "shroomie",
+          "name": "mushroom2",
+          "price": 1.85,
+          "highestBid": 3.91,
+          "tags": ["planet"],
+          "collection": "490b"
+        },
+        {
+          "id": "4be9",
+          "creator": "shroomie",
+          "name": "mushroom1",
+          "price": 1.85,
+          "highestBid": 3.91,
+          "tags": ["planet"],
+          "collection": "490b"
+        },
+        {
+          "id": "40c",
+          "creator": "shroomie",
+          "name": "mushroom3",
+          "price": 1.85,
+          "highestBid": 3.91,
+          "tags": ["planet"],
+          "collection": "490b"
+        }
+      ]
+    }
+  ],
+  "roles": ["user"]
+}

@@ -1,0 +1,23 @@
+{
+  "favorites": [
+    {
+      "id": "1cbe",
+      "creator": "juanie",
+      "name": "NFT Name",
+      "price": 1.85,
+      "highestBid": 3.91,
+      "tags": ["planet"],
+      "collection": "490b"
+    },
+    {
+      "id": "4be9",
+      "creator": "shroomie",
+      "name": "mushroom1",
+      "price": 1.85,
+      "highestBid": 3.91,
+      "tags": ["planet"],
+      "collection": "490b"
+    }
+  ],
+  "history": ["aasd"]
+}

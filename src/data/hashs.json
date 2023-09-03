@@ -1,12 +1,1 @@
-[
-  {
-    "login": "salmon",
-    "email": "qwersapego@gmail.com",
-    "hash": "0625df32efff23c3acbb79ec50bfd8e3bd8c50b77da4a850ad440eb5b358ce15"
-  },
-  {
-    "login": "juanie",
-    "email": "juanie@email.com",
-    "hash": "4c9011cd86778e7621e02ac91f9b13770d4c3ed21c97e8f7aceeb75c139e5b44"
-  }
-]
+[{"login":"juanie","email":"juanie@email.com","hash":"4c9011cd86778e7621e02ac91f9b13770d4c3ed21c97e8f7aceeb75c139e5b44"},{"login":"shroomie","email":"shroomie@email.com","hash":"0fdf96b49f61a63c1ecfc874ff195f25e86f2749b1d1284957ac557d4e9f4390"},{"login":"animakid","email":"animakid@email.com","hash":"8570e282503a164387e46f084850be7c7be05006d58aef5d21815a285afb5171"},{"login":"bluewhale","email":"bluewhale@mail.com","hash":"6ff8ca14575c5b218ad9d7085cb67f9a4643e7f270db8b59004cc0ee0ab63e5d"},{"login":"digilab","email":"digilab@mail.com","hash":"bb1076bac6cb3b588fed276f6a24541545d3fdc33bc2b84a4807c8f0fc2cfd65"},{"login":"dotgu","email":"dotgu@mail.com","hash":"94ca652700132011714ebe5951b9de2e725f04b4a247cedd29f7336148d186c4"},{"login":"ghiblier","email":"ghiblier@mail.com","hash":"37d3c5fe4f62d745bd7b7644345448db6c2aa3e5e6298d40293c59bb6937a9f3"},{"login":"gravityone","email":"gravityone@mail.com","hash":"fb1db57337a2d2d124ac04aff5c2d5c134e3982a034d4d3ce06eb7b386705cc6"},{"login":"keepitreal","email":"keepitreal@mail.com","hash":"5ae50cce6bb56cbecc05b866d06a95e848c263ca4f13817fcd981d81c2b9696a"},{"login":"mrfox","email":"mrfox@mail.com","hash":"3bda53aeb2a0cd1c4eea354ea02b0217901f2b7ddc5652951e1a191d1e06f651"},{"login":"robotica","email":"robotica@mail.com","hash":"a530d9491d5069b58c7743807f1eeba8b497ef772fc56bb11d6ed4230c89c802"},{"login":"rustyrobot","email":"rustyrobot@mail.com","hash":"78a9c70abfb54c2bd076ec90773f58356071a87bdcebd17cd0bdecba8ac7b274"},{"login":"salmon","email":"qwersapego@gmail.com","hash":"93da873af53ba7d9f3a0dea1b11dbf4c5ae74468710e3fb71ae8123ab492d3d0"},{"login":"admin","email":"admin@email.com","hash":"faa4fb0b9c9d2b74cbbc9b0eaea6bd018dbf1de987d5032d676caae461514aae"},{"login":"admin2","email":"admin2@email.com","hash":"987dab574f9677d8d142abffd425837a35718b4e26c78fb07f84b27ed18a4c1b"}]

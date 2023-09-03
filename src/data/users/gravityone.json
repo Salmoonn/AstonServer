@@ -1,0 +1,84 @@
+{
+  "login": "gravityone",
+  "email": "gravityone@mail.com",
+  "name": "gravityone",
+  "totalSale": 0,
+  "volume": 0,
+  "sold": 0,
+  "followers": 0,
+  "bio": null,
+  "link": {
+    "globe": null,
+    "discord": null,
+    "youtube": null,
+    "twitter": null,
+    "instagram": null
+  },
+  "items": [
+    {
+      "id": "fda1",
+      "creator": "gravityone",
+      "name": "Distan Galaxy",
+      "price": 2.73,
+      "highestBid": 2.38,
+      "tags": [],
+      "description": ""
+    },
+    {
+      "id": "27d7",
+      "creator": "gravityone",
+      "name": "Cherry Blossom Girl",
+      "price": 12.67,
+      "highestBid": 26.6,
+      "description": "",
+      "minted": "2022-09-29",
+      "tags": ["animation", "illustration", "moon"]
+    },
+    {
+      "id": "be74",
+      "creator": "gravityone",
+      "name": "CryptoCity",
+      "price": 2.73,
+      "highestBid": 2.38,
+      "tags": [],
+      "description": ""
+    },
+    {
+      "id": "d765",
+      "creator": "gravityone",
+      "name": "IceCream Ape",
+      "price": 2.73,
+      "highestBid": 2.38,
+      "tags": [],
+      "description": ""
+    },
+    {
+      "id": "d76",
+      "creator": "gravityone",
+      "name": "Space Tales",
+      "price": 2.73,
+      "highestBid": 2.38,
+      "tags": [],
+      "description": ""
+    },
+    {
+      "id": "fd43",
+      "creator": "gravityone",
+      "name": "ColorfulDog",
+      "price": 2.73,
+      "highestBid": 2.38,
+      "tags": [],
+      "description": ""
+    },
+    {
+      "id": "6af7",
+      "creator": "gravityone",
+      "name": "Dancing Robot",
+      "price": 2.73,
+      "highestBid": 2.38,
+      "tags": []
+    }
+  ],
+  "collections": null,
+  "roles": ["user"]
+}

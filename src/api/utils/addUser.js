@@ -1,18 +1,14 @@
 const fs = require("fs");
-const path = require("path");
-
-let users = require("../../data/users.json");
-const pathUsers = path.resolve("src/data/users.json");
-fs.watchFile(pathUsers, async () => {
-  const data = fs.readFileSync(pathUsers);
-  users = await JSON.parse(data);
-});
 
 const addUser = (login, email) => {
-  const newUsers = [...users, createUser(login, email)];
-  fs.writeFileSync("src/data/users.json", JSON.stringify(newUsers));
-  return new Promise((resolve) =>
-    fs.watchFile("src/data/users.json", () => resolve("user add"))
+  const user = createUser(login, email);
+  fs.writeFileSync(`src/data/users/${login}.json`, JSON.stringify(user));
+  fs.writeFileSync(
+    `src/data/private/users/${login}.json`,
+    JSON.stringify({
+      favorites: [],
+      history: [],
+    })
   );
 };
 

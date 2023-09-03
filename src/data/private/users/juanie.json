@@ -1,0 +1,36 @@
+{
+  "favorites": [
+    {
+      "id": "c88e",
+      "creator": "robotica",
+      "name": "Cat",
+      "price": 0,
+      "highestBid": 1.77,
+      "tags": null,
+      "collection": null
+    },
+    {
+      "id": "d76",
+      "creator": "gravityone",
+      "name": "Space Tales",
+      "price": 2.73,
+      "highestBid": 2.38,
+      "tags": [],
+      "description": ""
+    }
+  ],
+  "history": [
+    "che",
+    "zxc",
+    "йцу",
+    "qwe",
+    "qweqwe",
+    "qweasd",
+    "zxc",
+    "che",
+    "1",
+    "2",
+    "3",
+    "mus"
+  ]
+}

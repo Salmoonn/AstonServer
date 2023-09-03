@@ -1,11 +1,9 @@
 {
   "id": "40c",
   "creator": "shroomie",
-  "name": "NFT Name",
+  "name": "mushroom3",
   "price": 1.85,
   "highestBid": 3.91,
-  "tags": [
-    "planet"
-  ],
+  "tags": ["planet"],
   "collection": "490b"
 }

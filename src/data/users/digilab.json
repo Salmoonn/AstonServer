@@ -1,0 +1,30 @@
+{
+  "login": "digilab",
+  "email": "digilab@mail.com",
+  "name": "digilab",
+  "totalSale": 63,
+  "volume": 0,
+  "sold": 0,
+  "followers": 0,
+  "bio": null,
+  "link": {
+    "globe": null,
+    "discord": null,
+    "youtube": null,
+    "twitter": null,
+    "instagram": null
+  },
+  "items": [
+    {
+      "id": "45a",
+      "creator": "digilab",
+      "name": "Astrofiction",
+      "price": 8.81,
+      "highestBid": 3.82,
+      "tags": [],
+      "description": ""
+    }
+  ],
+  "collections": null,
+  "roles": ["user"]
+}
