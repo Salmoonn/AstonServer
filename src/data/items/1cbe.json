@@ -1,9 +1,1 @@
-{
-  "id": "1cbe",
-  "creator": "juanie",
-  "name": "NFT Name",
-  "price": 1.85,
-  "highestBid": 3.91,
-  "tags": ["planet"],
-  "collection": "490b"
-}
+{"id":"1cbe","creator":"juanie","name":"Planet","price":0.58,"highestBid":36.75,"minted":1397817579919,"description":"Quis autem vel eum iure reprehenderit, consectetur adipiscing elit, velit esse cillum dolore eu fugiat nulla pariatur?\n\nSed ut perspiciatis, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, sunt in culpa qui officia deserunt mollit...","tags":["planet"],"collection":"490b"}

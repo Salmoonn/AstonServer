@@ -8,18 +8,29 @@ historyRouter.post("/posthistory", verifyAuthMiddleware, (req, res) => {
   const { login } = req.user;
   const { search } = req.body;
 
-  let user = require(`../../data/private/users/${login}.json`);
-  const userPath = `./src/data/private/users/${login}.json`;
+  const path = `./src/data/private/users/${login}.json`;
 
-  fs.watchFile(userPath, async () => {
-    user = await JSON.parse(fs.readFileSync(userPath));
-  });
+  let user = JSON.parse(fs.readFileSync(path));
 
-  user.history.push(search);
+  user.history.unshift(search);
 
-  fs.writeFileSync(userPath, JSON.stringify(user));
+  if (search !== "") {
+    fs.writeFileSync(path, JSON.stringify(user));
+  } else {
+    res.send({ isWrite: false });
+  }
 
   res.send({ isWrite: true });
+});
+
+historyRouter.delete("/deletehistory", verifyAuthMiddleware, (req, res) => {
+  const { login } = req.user;
+  const path = `src/data/private/users/${login}.json`;
+
+  const user = JSON.parse(fs.readFileSync(path));
+  user.history = [];
+  fs.writeFileSync(path, JSON.stringify(user));
+  res.send();
 });
 
 module.exports = historyRouter;

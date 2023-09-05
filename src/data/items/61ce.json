@@ -1,9 +1,1 @@
-{
-  "id": "61ce",
-  "creator": "juanie",
-  "name": "NFT Name",
-  "price": 0.29,
-  "highestBid": 4.08,
-  "tags": ["planet"],
-  "collection": "490b"
-}
+{"id":"61ce","creator":"juanie","name":"Planet 4","price":18.67,"highestBid":53.11,"minted":166493600725,"description":"Nemo enim ipsam voluptatem, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.\n\nExcepteur sint occaecat cupidatat non proident, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod...","tags":["planet"],"collection":"490b"}

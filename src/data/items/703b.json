@@ -1,9 +1,1 @@
-{
-  "id": "703b",
-  "creator": "juanie",
-  "name": "NFT Name",
-  "price": 9.95,
-  "highestBid": 2.95,
-  "tags": ["planet"],
-  "collection": "490b"
-}
+{"id":"703b","creator":"juanie","name":"Planet 5","price":90.62,"highestBid":17.89,"minted":1536140300699,"description":"Ut enim ad minima veniam, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi ut...","tags":["planet"],"collection":"490b"}

@@ -14,35 +14,7 @@
     "twitter": null,
     "instagram": null
   },
-  "items": [
-    {
-      "id": "e61",
-      "creator": "robotica",
-      "name": "Cube",
-      "price": 5.28,
-      "highestBid": 8.45,
-      "tags": [],
-      "collection": []
-    },
-    {
-      "id": "5b73",
-      "creator": "robotica",
-      "name": "Life of Edena",
-      "price": 4.14,
-      "highestBid": 1.23,
-      "tags": [],
-      "description": ""
-    },
-    {
-      "id": "c88e",
-      "creator": "robotica",
-      "name": "Cat",
-      "price": 0,
-      "highestBid": 1.77,
-      "tags": [],
-      "collection": []
-    }
-  ],
+  "items": ["e61", "5b73", "c88e"],
   "collections": null,
   "roles": ["user"]
 }

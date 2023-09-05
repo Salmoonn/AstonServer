@@ -3,6 +3,7 @@ const express = require("express");
 const res = require("express/lib/response");
 const fs = require("fs");
 const path = require("path");
+const getItem = require("../utils/getItem");
 
 const verifyAuthMiddleware = require("../utils/verifyAuthMiddleware");
 
@@ -12,40 +13,45 @@ favoritesRouter.post("/togglefavorites", verifyAuthMiddleware, (req, res) => {
   const { itemId } = req.body;
   const { login } = req.user;
 
-  let user = require(`../../data/private/users/${login}.json`);
-  const userPath = `./src/data/private/users/${login}.json`;
-
-  fs.watchFile(userPath, async () => {
-    user = await JSON.parse(fs.readFileSync(userPath));
-  });
+  const userPath = `src/data/users/${login}.json`;
+  const userPrivatePath = `src/data/private/users/${login}.json`;
 
   try {
-    if (user.favorites.find((e) => e.id === itemId)) {
-      user.favorites = user.favorites.filter((e) => e.id !== itemId);
-      fs.writeFileSync(userPath, JSON.stringify(user));
+    const user = JSON.parse(fs.readFileSync(userPath));
+    const userPrivate = JSON.parse(fs.readFileSync(userPrivatePath));
 
-      res.send({ isDelete: true });
+    if (userPrivate.favorites.find((e) => e === itemId)) {
+      userPrivate.favorites = userPrivate.favorites.filter((e) => e !== itemId);
+      fs.writeFileSync(userPrivatePath, JSON.stringify(userPrivate));
     } else {
-      user.favorites.push(
-        JSON.parse(fs.readFileSync(`src/data/items/${itemId}.json`))
-      );
-      fs.writeFileSync(userPath, JSON.stringify(user));
-
-      res.send({ isAdd: true });
+      userPrivate.favorites.push(itemId);
+      fs.writeFileSync(userPrivatePath, JSON.stringify(userPrivate));
     }
+
+    user.history = userPrivate.history;
+    user.favorites =
+      userPrivate.favorites.length !== 0
+        ? userPrivate.favorites.map((e) => getItem(e))
+        : null;
+
+    res.send(user);
   } catch {
-    res.send({ error: true });
+    res.sendStatus(500);
   }
 });
 
-favoritesRouter.get("/getfavorites", verifyAuthMiddleware, (req, res) => {
-  const { login } = req.user;
+// favoritesRouter.get("/getfavorites", verifyAuthMiddleware, (req, res) => {
+//   const { login } = req.user;
 
-  const { favorites } = JSON.parse(
-    fs.readFileSync(`src/data/private/users/${login}.json`)
-  );
+//   const { favoriteIds } = JSON.parse(
+//     fs.readFileSync(`src/data/private/users/${login}.json`)
+//   );
 
-  res.send(favorites || null);
-});
+//   const favorites = favoriteIds.map((e) =>
+//     JSON.parse(fs.readFileSync(`src/data/items/${e}.json`))
+//   );
+
+//   res.send(favorites);
+// });
 
 module.exports = favoritesRouter;

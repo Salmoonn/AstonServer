@@ -2,33 +2,5 @@
   "id": "2e6a",
   "name": "Mashroom",
   "creator": "shroomie",
-  "body": [
-    {
-      "id": "cea5",
-      "creator": "shroomie",
-      "name": "NFT Name",
-      "price": 1.85,
-      "highestBid": 3.91,
-      "tags": ["planet"],
-      "collection": "490b"
-    },
-    {
-      "id": "4be9",
-      "creator": "shroomie",
-      "name": "NFT Name",
-      "price": 1.85,
-      "highestBid": 3.91,
-      "tags": ["planet"],
-      "collection": "490b"
-    },
-    {
-      "id": "40c",
-      "creator": "shroomie",
-      "name": "NFT Name",
-      "price": 1.85,
-      "highestBid": 3.91,
-      "tags": ["planet"],
-      "collection": "490b"
-    }
-  ]
+  "body": ["cea5", "4be9", "40c"]
 }

@@ -12,11 +12,17 @@ const favoritesRouter = require("./src/api/favorites");
 const historyRouter = require("./src/api/history");
 
 const app = express();
+
+// app.use((req, res, next) => {
+//   setTimeout(() => next(), Math.round(Math.random() * 1000));
+// });
+
 app.use((req, res, next) => {
   res.append("Access-Control-Allow-Origin", "http://localhost:3000");
-  // res.append("Access-Control-Allow-Origin", "http://192.168.1.101:3000");
+  // res.append("Access-Control-Allow-Origin", "http://127.0.0.1:5501");
   res.append("Access-Control-Allow-Credentials", "true");
   res.append("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  res.append("Access-Control-Allow-Methods", "POST, GET, DELETE");
   next();
 });
 

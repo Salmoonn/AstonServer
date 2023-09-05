@@ -1,9 +1,1 @@
-{
-  "id": "8ab2",
-  "creator": "juanie",
-  "name": "NFT Name",
-  "price": 0.43,
-  "highestBid": 7.8,
-  "tags": ["planet"],
-  "collection": "490b"
-}
+{"id":"8ab2","creator":"juanie","name":"Planet 3","price":49.93,"highestBid":93.52,"minted":826467398038,"description":"Sed ut perspiciatis, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, sunt in culpa qui officia deserunt mollit anim id est laborum!\n\nItaque earum rerum hic tenetur a sapiente delectus, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione...","tags":["planet"],"collection":"490b"}

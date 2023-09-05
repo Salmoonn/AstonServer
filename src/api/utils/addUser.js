@@ -30,6 +30,7 @@ const createUser = (login, email) => ({
     instagram: null,
   },
   item: null,
+  collection: null,
   roles: ["user"],
 });
 

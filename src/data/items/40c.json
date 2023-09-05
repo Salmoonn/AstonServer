@@ -1,9 +1,1 @@
-{
-  "id": "40c",
-  "creator": "shroomie",
-  "name": "mushroom3",
-  "price": 1.85,
-  "highestBid": 3.91,
-  "tags": ["planet"],
-  "collection": "490b"
-}
+{"id":"40c","creator":"shroomie","name":"mushroom3","price":54.52,"highestBid":32.22,"minted":974544492748,"description":"Sed ut perspiciatis, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, sunt in culpa qui officia deserunt mollit anim id est laborum!\n\nItaque earum rerum hic tenetur a sapiente delectus, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione...","tags":["planet"],"collection":"490b"}

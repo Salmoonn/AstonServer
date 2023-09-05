@@ -15,41 +15,6 @@
     "instagram": null
   },
   "items": null,
-  "collections": [
-    {
-      "id": "2e6a",
-      "name": "Mashroom",
-      "creator": "shroomie",
-      "body": [
-        {
-          "id": "cea5",
-          "creator": "shroomie",
-          "name": "mushroom2",
-          "price": 1.85,
-          "highestBid": 3.91,
-          "tags": ["planet"],
-          "collection": "490b"
-        },
-        {
-          "id": "4be9",
-          "creator": "shroomie",
-          "name": "mushroom1",
-          "price": 1.85,
-          "highestBid": 3.91,
-          "tags": ["planet"],
-          "collection": "490b"
-        },
-        {
-          "id": "40c",
-          "creator": "shroomie",
-          "name": "mushroom3",
-          "price": 1.85,
-          "highestBid": 3.91,
-          "tags": ["planet"],
-          "collection": "490b"
-        }
-      ]
-    }
-  ],
+  "collections": ["2e6a"],
   "roles": ["user"]
 }

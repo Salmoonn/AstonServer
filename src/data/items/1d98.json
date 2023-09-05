@@ -1,9 +1,1 @@
-{
-  "id": "1d98",
-  "creator": "juanie",
-  "name": "NFT Name",
-  "price": 0.72,
-  "highestBid": 4.66,
-  "tags": ["planet"],
-  "collection": "490b"
-}
+{"id":"1d98","creator":"juanie","name":"Planet 2","price":19.32,"highestBid":33.83,"minted":1549102122456,"description":"Et harum quidem rerum facilis est et expedita distinctio, quis nostrum exercitationem ullam corporis suscipit laboriosam, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga!\n\n  Et harum quidem rerum facilis est et expedita distinctio, consectetur adipiscing elit, sunt in culpa...","tags":["planet"],"collection":"490b"}

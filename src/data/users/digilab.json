@@ -14,17 +14,7 @@
     "twitter": null,
     "instagram": null
   },
-  "items": [
-    {
-      "id": "45a",
-      "creator": "digilab",
-      "name": "Astrofiction",
-      "price": 8.81,
-      "highestBid": 3.82,
-      "tags": [],
-      "description": ""
-    }
-  ],
+  "items": ["45a"],
   "collections": null,
   "roles": ["user"]
 }

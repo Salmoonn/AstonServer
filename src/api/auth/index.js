@@ -10,6 +10,7 @@ const verifyAuthMiddleware = require("../utils/verifyAuthMiddleware");
 const verifyRefreshTokenMiddleware = require("../utils/verifyRefreshTokenMiddleware");
 
 let hashs = require("../../data/hashs.json");
+const getItem = require("../utils/getItem");
 const pathHashs = path.resolve("src/data/hashs.json");
 fs.watchFile(pathHashs, async () => {
   const data = fs.readFileSync(pathHashs);
@@ -77,7 +78,8 @@ authRouter.get("/profile", verifyAuthMiddleware, (req, res) => {
   try {
     const user = JSON.parse(fs.readFileSync(srcUser));
     let { favorites, history } = JSON.parse(fs.readFileSync(srcPrivateUser));
-    favorites = favorites.length !== 0 ? favorites : null;
+    favorites =
+      favorites.length !== 0 ? favorites.map((e) => getItem(e)) : null;
     history = history.length !== 0 ? history : null;
 
     res.send({ ...user, favorites, history });
