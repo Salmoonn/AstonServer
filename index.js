@@ -19,6 +19,7 @@ const app = express();
 
 app.use((req, res, next) => {
   res.append("Access-Control-Allow-Origin", "http://localhost:3000");
+  // res.append("Access-Control-Allow-Origin", "http://192.168.1.101:3000");
   // res.append("Access-Control-Allow-Origin", "http://127.0.0.1:5501");
   res.append("Access-Control-Allow-Credentials", "true");
   res.append("Access-Control-Allow-Headers", "Content-Type, Authorization");
@@ -40,4 +41,5 @@ app.use(historyRouter);
 
 const PORT = 3001;
 
+// eslint-disable-next-line no-console
 app.listen(PORT, () => console.log(`Server listens port: ${PORT}`));
