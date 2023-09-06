@@ -16,21 +16,23 @@ imageRouter.get("/i/:id", (req, res) => {
 
 //AVATAR
 imageRouter.get("/a/:id", (req, res) => {
+  const srcDefault = path.resolve("src/data/images/avatars/default.png");
   const srcAvatar = path.resolve(
     "src/data/images/avatars/" + req.params.id + ".png"
   );
   fs.access(srcAvatar, (err) =>
-    err ? res.sendStatus(404) : res.sendFile(srcAvatar)
+    err ? res.sendFile(srcDefault) : res.sendFile(srcAvatar)
   );
 });
 
 //BANNER
 imageRouter.get("/b/:id", (req, res) => {
+  const srcDefault = path.resolve("src/data/images/banners/default.png");
   const srcBanner = path.resolve(
     "src/data/images/banners/" + req.params.id + ".png"
   );
   fs.access(srcBanner, (err) =>
-    err ? res.sendStatus(404) : res.sendFile(srcBanner)
+    err ? res.sendFile(srcDefault) : res.sendFile(srcBanner)
   );
 });
 

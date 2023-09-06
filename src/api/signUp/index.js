@@ -9,11 +9,11 @@ const addUser = require("../utils/addUser");
 const addHash = require("../utils/addHash");
 const getTokens = require("../utils/getTokens");
 
-let users = require("../../data/users.json");
-const pathUsers = path.resolve("src/data/users.json");
-fs.watchFile(pathUsers, async () => {
-  const data = fs.readFileSync(pathUsers);
-  users = await JSON.parse(data);
+let hashs = require("../../data/hashs.json");
+const pathHashs = path.resolve("src/data/hashs.json");
+fs.watchFile(pathHashs, async () => {
+  const data = fs.readFileSync(pathHashs);
+  hashs = await JSON.parse(data);
 });
 
 const signUpRouter = express.Router();
@@ -22,21 +22,16 @@ const signUpRouter = express.Router();
 signUpRouter.post("/signup", async (req, res) => {
   const { login, email, password } = req.body;
 
-  const response = {
-    isValidLogin: true,
-    isValidEmail: true,
-    accessToken: "",
-  };
-
-  if (users.find((e) => e.login === login)) {
+  if (hashs.find((e) => e.login === login)) {
     return res.send({ isNotValidLogin: true });
   }
 
-  if (users.find((e) => e.email === email)) {
+  if (hashs.find((e) => e.email === email)) {
     return res.send({ isNotValidEmail: true });
   }
 
-  await Promise.all([addUser(login, email), addHash(login, email, password)]);
+  addUser(login, email);
+  addHash(login, email, password);
 
   const { accessToken, refreshToken } = getTokens(login);
 

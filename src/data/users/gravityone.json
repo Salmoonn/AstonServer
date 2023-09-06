@@ -1,0 +1,20 @@
+{
+  "login": "gravityone",
+  "email": "gravityone@mail.com",
+  "name": "gravityone",
+  "totalSale": 0,
+  "volume": 0,
+  "sold": 0,
+  "followers": 0,
+  "bio": null,
+  "link": {
+    "globe": null,
+    "discord": null,
+    "youtube": null,
+    "twitter": null,
+    "instagram": null
+  },
+  "items": ["fda1", "27d7", "be74", "d765", "d76", "fd43", "6af7"],
+  "collections": null,
+  "roles": ["user"]
+}

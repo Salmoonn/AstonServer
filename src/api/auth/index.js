@@ -10,17 +10,11 @@ const verifyAuthMiddleware = require("../utils/verifyAuthMiddleware");
 const verifyRefreshTokenMiddleware = require("../utils/verifyRefreshTokenMiddleware");
 
 let hashs = require("../../data/hashs.json");
+const getItem = require("../utils/getItem");
 const pathHashs = path.resolve("src/data/hashs.json");
 fs.watchFile(pathHashs, async () => {
   const data = fs.readFileSync(pathHashs);
   hashs = await JSON.parse(data);
-});
-
-let users = require("../../data/users.json");
-const pathUsers = path.resolve("src/data/users.json");
-fs.watchFile(pathUsers, async () => {
-  const data = fs.readFileSync(pathUsers);
-  users = await JSON.parse(data);
 });
 
 const authRouter = express.Router();
@@ -35,8 +29,8 @@ authRouter.post("/login", (req, res) => {
     .digest("hex");
 
   const user =
-    users.find((e) => e.login === login) ||
-    users.find((e) => e.email === login);
+    hashs.find((e) => e.login === login) ||
+    hashs.find((e) => e.email === login);
 
   if (!user) {
     return res.send({ isNotValidData: true });
@@ -78,9 +72,21 @@ authRouter.get("/logout", (req, res) => {
 authRouter.get("/profile", verifyAuthMiddleware, (req, res) => {
   const login = req.user.login;
 
-  const user = users.find((e) => e.login === login || e.email === login);
+  const srcUser = `src/data/users/${login}.json`;
+  const srcPrivateUser = `src/data/private/users/${login}.json`;
 
-  res.send(user);
+  try {
+    const user = JSON.parse(fs.readFileSync(srcUser));
+    let { favorites, history } = JSON.parse(fs.readFileSync(srcPrivateUser));
+    favorites =
+      favorites.length !== 0 ? favorites.map((e) => getItem(e)) : null;
+    history = history.length !== 0 ? history : null;
+
+    res.send({ ...user, favorites, history });
+  } catch (err) {
+    console.error(err.message);
+    res.sendStatus(404);
+  }
 });
 
 //REFRESH

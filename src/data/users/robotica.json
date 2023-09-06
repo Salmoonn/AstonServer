@@ -1,0 +1,20 @@
+{
+  "login": "robotica",
+  "email": "robotica@mail.com",
+  "name": "robotica",
+  "totalSale": 60,
+  "volume": 0,
+  "sold": 0,
+  "followers": 0,
+  "bio": null,
+  "link": {
+    "globe": null,
+    "discord": null,
+    "youtube": null,
+    "twitter": null,
+    "instagram": null
+  },
+  "items": ["e61", "5b73", "c88e"],
+  "collections": null,
+  "roles": ["user"]
+}

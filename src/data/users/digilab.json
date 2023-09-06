@@ -1,0 +1,20 @@
+{
+  "login": "digilab",
+  "email": "digilab@mail.com",
+  "name": "digilab",
+  "totalSale": 63,
+  "volume": 0,
+  "sold": 0,
+  "followers": 0,
+  "bio": null,
+  "link": {
+    "globe": null,
+    "discord": null,
+    "youtube": null,
+    "twitter": null,
+    "instagram": null
+  },
+  "items": ["45a"],
+  "collections": null,
+  "roles": ["user"]
+}
